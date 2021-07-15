@@ -1,13 +1,101 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-size: 20px;
+  font-family: sans-serif;
+  color: white;
+}
+
+.app-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #bee3ff;
+  min-height: 100vh;
+}
+
+.main-container {
+  background-color: #ec645b;
+  width: 500px;
+  height: min-content;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.35);
+}
+
+.add-item-box {
+  display: flex;
+  align-items: center;
+  color: #ec645b;
+  background: #fbc1bb;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.add-item-input {
+  width: 100%;
+  height: 30px;
+  background: transparent;
+  color: black;
+  border: none;
+}
+
+.add-icon {
+  cursor: pointer;
+}
+
+input::placeholder {
+  color: #ec645b;
+}
+input:focus {
+  outline: 0;
+}
+.item-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px;
+  border-bottom: 1px solid #fbc1bb;
+}
+
+.item-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow-check {
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ec645b;
+  background: whitesmoke;
+  color: #ec645b;
+  min-width: 70px;
+  border-radius: 50px;
+}
+
+.arrow {
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.total {
+  text-align: right;
+  padding: 10px;
+  margin-left: 1rem;
 }
